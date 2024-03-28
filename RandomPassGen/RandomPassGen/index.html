@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+<section class="app-container">
+<div class="text">
+    <h2>Generate a <br><span>random password</span></h2>
+    <p>Never use an insecure password again</p>
+</div>
+<div class="length-container">
+    <div>
+        <label for="length">Password Length (5 - 15)</label>
+        <input class="input-length" type="number" id="length" value="15">
+    </div>
+    <div>
+        <label for="numbers">Include Numbers</label>
+        <input class="input-numbers" type="checkbox" id="numbers" checked>
+    </div>
+    <div>
+        <label for="symbols">Include Symbols</label>
+        <input class="input-symbols" type="checkbox" id="symbols" checked>
+    </div>
+</div>
+<button id="generate-btn" type="button">Generate passwords</button>
+<div class="output-container">
+    <p class="copy-notice">*Password will be copied on click to clipboard</p>
+    <div class="output-items">
+        <p class="output-one"></p>
+        <p class="output-two"></p>
+
+    </div>
+</div>
+
+</section>
+
+
+<script src="index.js"></script>
+</body>
+</html>
